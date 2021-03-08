@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-	data1 := []int{1, 2, 3, 4}
-	data2 := []int{4, 3, 2, 1}
-	fmt.Println("Check permutation: ", search.CheckPermutation(data1, data2))
+	data3 := []int{1, 2, 2, 2, 3, 3}
+	fmt.Println(data3)
+	j := search.RemoveDuplicates(data3)
+	fmt.Println(data3[:j], j)
 }
