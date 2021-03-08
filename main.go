@@ -2,13 +2,19 @@ package main
 
 import (
 	"fmt"
-	"go-algorithms/search"
+	"go-algorithms/sorting"
 )
 
 func main() {
-	data := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
-	fmt.Println("v1")
-	search.TripletSum(data, 8)
-	fmt.Println("v2")
-	search.TripletSumV2(data, 8)
+	data := []int{0, 1, 2, 3, 4, 5, 6, 7, 9, 8}
+	sorting.BubbleSort(data, more)
+	fmt.Println(data)
+}
+
+func less(v1 int, v2 int) bool {
+	return v1 < v2
+}
+
+func more(v1 int, v2 int) bool {
+	return v1 > v2
 }
