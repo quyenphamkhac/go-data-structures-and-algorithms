@@ -7,7 +7,7 @@ import (
 
 func main() {
 	data := []int{9, 1, 8, 2, 7, 3, 6, 4, 5}
-	sorting.InsertionSort(data, less)
+	sorting.SelectionSort2(data, less)
 	fmt.Println(data)
 }
 
