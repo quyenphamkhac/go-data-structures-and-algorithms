@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	data := []int{0, 1, 2, 3, 4, 5, 6, 7, 9, 8}
-	sorting.BubbleSort2(data, more)
+	data := []int{9, 1, 8, 2, 7, 3, 6, 4, 5}
+	sorting.InsertionSort(data, less)
 	fmt.Println(data)
 }
 
